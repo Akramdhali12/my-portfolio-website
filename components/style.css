@@ -1,0 +1,89 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* height: 100vh;
+    width: 100%; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --primaryColor:#101820;
+    --secondColor:#009bf9;
+    --textColor:#F2FAFF;
+    --gray:rgba(42,53,62,0.4);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+#mainNavber{
+    background-color: var(--primaryColor)!important;
+    border-bottom: 2px solid var(--gray);
+}
+#mainNavber .nav-item .nav-link{
+    position: relative;
+    color: var(--textColor);
+}
+#mainNavber .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--secondColor);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+    -ms-transition:ease .40s;
+}
+#mainNavber .nav-item:not(:last-child) .nav-link:hover::after{
+    width: 100%;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+.cards{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* text-align: center; */
+    /* top: 50%; */
+}
+.cards .contact-card{
+    /* width: fit-content;
+    height: fit-content; */
+    /* background-color: rgb(180, 214, 161); */
+    /* top: 40%; */
+    color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 3px 4px 10px 0 rgba(252, 252, 252, 0.2), 5px 10px 20px 0 rgba(223, 220, 220, 0.19);
+
+}
+.contact-card li{
+    font-size: 1.2rem;
+    font-family: arial;
+}
+
+.elements{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 4px;
+    /* background-color: rgb(209, 240, 143); */
+    /* width: fit-content; */
+}
+.elements .element{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
