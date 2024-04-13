@@ -104,6 +104,9 @@ section{
   .mySlides {
     display: none;
   }
+  .mySlides img{
+    height: 402px;
+  }
   
   /* Next & previous buttons */
   .prev, .next {
