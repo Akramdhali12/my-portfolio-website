@@ -1,6 +1,6 @@
 
 var typed = new Typed('.typer', {
-    strings: ['Graphics Designer','Full Stack Web-Devloper.','java Devloper'],
+    strings: ['Graphics Designer','Full Stack Web-Devloper.','java Devloper','problem solver'],
     typeSpeed:100,
     backSpeed:100,
     loop:true
